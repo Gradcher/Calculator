@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="build/CSS/styles.css" />
+  </head>
+  <body>
+    <main class="calcContainer">
+      <img class="waves" src="Images/Waves.png" alt="waves" />
+      <div class="display">
+        <p id="displayNum"></p>
+      </div>
+
+      <div class="topButtons">
+        <button onclick="clearDisplay.call(this)" id="bAC">AC</button>
+        <button onclick="delElDisplay.call(this)">DEL</button>
+
+        <button onclick="verification('𝜋')"><h2 class="bPi">&#120587;</h2></button>
+
+        <button onclick="verification('e')"><h2 class="bCE">&#101;</h2></button>
+
+        <button onclick="verification('√')"><p>&#8730;</p></button>
+
+        <button onclick="verification('\u00F7')"><p>&#247;</p></button>
+
+        <button onclick="parantheses.openParanth">(</button>
+        <button onclick="parantheses.closeParanth">)</button>
+
+        <button onclick="verification('!')">X!</button>
+
+        <button onclick="verification('^')">X<sup>Y</sup></button>
+
+        <button onclick="verification('%')"><p>&#37;</p></button>
+
+        <button onclick="verification('\u00D7')"><p>&#215;</p></button>
+      </div>
+
+      <div class="wrapDownButtons">
+        <div class="downLeftButtons">
+          <button onclick="changeSign()"><p>&#177;</p></button>
+
+          <button onclick="buffer.memorySave">MS</button>
+
+          <button onclick="buffer.memoryClear">MC</button>
+
+          <button onclick="buffer.memoryRead">MR</button>
+
+          <button onclick="buffer.add">M+</button>
+
+          <button onclick="buffer.subtr">M-</button>
+        </div>
+
+        <div class="downRightbuttons">
+          <button onclick="showNum.call(this)">7</button>
+
+          <button onclick="showNum.call(this)">8</button>
+
+          <button onclick="showNum.call(this)">9</button>
+
+          <button onclick="verification('+')"><p>&#43;</p></button>
+
+          <button onclick="showNum.call(this)">4</button>
+
+          <button onclick="showNum.call(this)">5</button>
+
+          <button onclick="showNum.call(this)">6</button>
+
+          <button onclick="verification('-')"><p>&#8722;</p></button>
+
+          <button onclick="showNum.call(this)">1</button>
+
+          <button onclick="showNum.call(this)">2</button>
+
+          <button onclick="showNum.call(this)">3</button>
+
+          <button onclick="showResult()" id="bEquel"><p>&#61;</p></button>
+
+          <button onclick="showNum.call(this)">0</button>
+
+          <button onclick="showNum.call(this)">00</button>
+
+          <button onclick="verification('.')">.</button>
+        </div>
+      </div>
+    </main>
+    <script src="build/JS/finishedJS.js"></script>
+    <!-- <script src="src/main.js"></script> -->
+    <script src="src/test.js"></script>
+  </body>
+</html>
