@@ -1,0 +1,28 @@
+{
+  "extends": ["plugin:prettier/recommended", "airbnb/base"],
+
+  "plugins": ["prettier"],
+
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "indent": ["error", 2],
+    "no-alert": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "func-names": ["error", "as-needed"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  }
+}
