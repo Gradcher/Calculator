@@ -26,7 +26,6 @@
     "gulp-stylelint": "^13.0.0",
     "gulp-terser": "^1.2.0",
     "imagemin-webp": "^5.1.0",
-    "node-normalize-scss": "^8.0.1",
     "prettier": "^2.0.4",
     "stylelint": "^13.3.2",
     "stylelint-config-recess-order": "^2.0.4",
