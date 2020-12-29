@@ -30,7 +30,6 @@ gulp.task(
   () =>
     gulp
       .src(filesScss) // взяли файлы, которые нужно обработать
-      .pipe(sass({ includePaths: require('node-normalize-scss').includePaths })) // добавили правила normalize к файлу
       .pipe(
         sass().on('error', sass.logError)
       ) /* sass() - преобразование sass в css
